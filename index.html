@@ -1,53 +1,107 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <title>RHEBEKAFLIX</title>
+    <title>In search of the lost city</title>
 </head>
 
 <body>
-    <header>Rhebeka flix</header>
-
-    <section class="chamada">
-        <div class="chamada-texto">
-            <h1>VIDA DE INSETO</h1>
-            <p>#Filmes de Animação</p>
+    <main>
+        <div class="step active" id="step-0">
+            <img src="img/cenario1-passo0.png" alt="">
+            <p>
+                Um dia desses, mechendo no em meu sotão eu encontro um livro antigo e decido ler, nele fala sobre um cidadde perdida que tem 
+                tesouros escondidos mas tem dois mapas dentro dele.
+            </p>
+            <button class="next-btn" data-next="1">Seguir o mapa maior</button>
+            <button class="next-btn" data-next="2">Seguir o mapa menor</button>
         </div>
-
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LLwyRYUvKbY?si=w1K27ecFryrBMZoG"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="step" id="step-1">
+            <p>
+                Eu sai em uma jornada longa de horas de caminhada então decido pegar um avião para um nome de 
+            país estranho            </p>
+            <button class="next-btn" data-next="3">Ir de avião</button>
+            <button class="next-btn" data-next="4">Desistir e voltar para casa</button>
         </div>
-    </section>
-
-    <section class="categoria">
-        <h2>Filmes e séries</h2>
-        <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
-                <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
-                <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
-                <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
-                <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
-                <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" />
-            </a>
+        <div class="step" id="step-2">
+            <p>
+               No mapa pedia para ir para as montanhas, e lá encontro uma caverna
+            </p>
+            <button class="next-btn" data-next="5">entrar na caverna</button>
+            <button class="next-btn" data-next="6">Explorar as praias próximas</button>
         </div>
-    </section>
-
+        <div class="step" id="step-3">
+            <p>
+               desço do avião em uma cidade deserta sem pessoas nem nada, oque vou faze?
+            </p>
+            <button class="next-btn" data-next="7">Seguir o mapa</button>
+        </div>
+        <div class="step" id="step-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="Returning to home and giving up on the adventure">
+            <p>
+                Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
+                encontrado.
+            </p>
+        </div>
+        <div class="step" id="step-5">
+            <p>
+                Nas praias não tinha nada de mais, mas eu pego umas frutas para comer no caminho.
+            </p>
+            <button class="next-btn" data-next="7">Ir para as montanhas</button>
+        </div>
+        <div class="step" id="step-6">
+            <p>
+                Explorando a caverna escura acendo uma tocha e sigo em frente, pois só tem esse caminho
+            </p>
+            <button class="next-btn" data-next="8">Entendo mais fundo</button>
+        </div>
+        <div class="step" id="step-7">
+            <p>
+                encontro uma caverna e decido entrar.
+            </p>
+            <button class="next-btn" data-next="9">comer uma das frutas</button>
+            <button class="next-btn" data-next="10">ignorar e seguir em frente</button>
+        </div>
+        <div class="step" id="step-8">
+            <p>
+                Como uma fruta que não me fez bem e acabo vomitando.
+            </p>
+            <button class="next-btn" data-next="7">se limpar e seguir</button>
+        </div>
+        <div class="step" id="step-9">
+            <p>
+               Vou aguentando a fome e sigo em frente e encontro um tipo de prota coberta por flores e folhas.
+            </p>
+            <button class="next-btn" data-next="11">entrar na porta</button>
+        </div>
+        <div class="step" id="step-10">
+            <p>
+                Passando pela porta eu finalmente encontro o reino perdido, fico admirado com a beleza do lugar
+            </p>
+            <button class="next-btn" data-next="12">Seguir e admirar</button>
+        </div>
+        <div class="step" id="step-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="Finding the lost wonderful city">
+            <p>
+                Dentro do reino perdido decido não pegar nada só deixo o mapa lá dentro pra que ningém possa achar esse lugar
+            </p>
+        </div>
+        <div class="step" id="step-12">
+            <p>
+                Retornando ando muito pra achar uma civilização e eu encontro, pego um avião e vou para casa.
+            </p>
+            <button class="next-btn" data-next="11">vou para casa</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
